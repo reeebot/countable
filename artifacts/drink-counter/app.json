@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "countable",
+    "slug": "countable",
+    "version": "1.1.2",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "countable",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#f6f2e8",
+      "image": "./assets/images/icon.png",
+      "imageWidth": 180
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.countable.app"
+    },
+    "android": {
+      "package": "com.countable.app",
+      "versionCode": 13,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon-adaptive-foreground.png",
+        "backgroundColor": "#153D35"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sharing",
+      [
+        "react-native-android-widget",
+        {
+          "widgets": [
+            {
+              "name": "Countable",
+              "label": "Countable",
+              "description": "Today's drink count, goal progress, and quick add.",
+              "minWidth": "250dp",
+              "minHeight": "120dp",
+              "targetCellWidth": 4,
+              "targetCellHeight": 2,
+              "resizeMode": "horizontal",
+              "updatePeriodMillis": 1800000
+            },
+            {
+              "name": "CountableCompact",
+              "label": "Countable compact",
+              "description": "A compact drink count, goal progress, and quick add.",
+              "minWidth": "140dp",
+              "minHeight": "72dp",
+              "targetCellWidth": 2,
+              "targetCellHeight": 1,
+              "resizeMode": "horizontal",
+              "updatePeriodMillis": 1800000
+            }
+          ]
+        }
+      ],
+      "./plugins/withAndroidReleaseSigning",
+      "./plugins/withAndroidProductionBundleCheck"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

@@ -1,0 +1,171 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: drinks
+    description: Search the locally hosted alcohol catalogue
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /drinks/search:
+    get:
+      operationId: searchDrinkProducts
+      tags: [drinks]
+      summary: Search alcoholic drinks
+      description: Searches locally hosted beer and liquor records with explicit ABV, plus clearly labeled typical wine-style estimates.
+      parameters:
+        - name: q
+          in: query
+          required: true
+          description: Drink, brand, brewery, or wine-style search text.
+          schema:
+            type: string
+            minLength: 2
+            maxLength: 80
+      responses:
+        "200":
+          description: Matching drink products
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DrinkSearchResponse"
+        "400":
+          description: Search text is missing or invalid
+        "502":
+          description: Product catalogue is temporarily unavailable
+  /drinks/products/{code}/nutrition:
+    get:
+      operationId: getDrinkProductNutrition
+      tags: [drinks]
+      summary: Get local catalogue details for a drink
+      description: Returns available local details. Calories and package size remain null unless the catalogue includes a compatible nutrition or size value.
+      parameters:
+        - name: code
+          in: path
+          required: true
+          description: Local catalogue identifier returned by drink search.
+          schema:
+            type: string
+            minLength: 1
+            maxLength: 32
+            pattern: "^[A-Za-z0-9]+$"
+      responses:
+        "200":
+          description: Product calorie information, or null when unavailable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DrinkProductNutritionResponse"
+        "400":
+          description: Product code is invalid
+        "404":
+          description: Product was not found in the catalogue
+        "502":
+          description: Product catalogue is temporarily unavailable
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    DrinkSearchProduct:
+      type: object
+      additionalProperties: false
+      properties:
+        code:
+          type: string
+        name:
+          type: string
+        brand:
+          type: [string, "null"]
+        category:
+          type: string
+          enum: [beer, liquor, wine]
+        volumeMl:
+          type: [number, "null"]
+        alcoholPercent:
+          type: [number, "null"]
+          minimum: 0.5
+          maximum: 100
+          description: Recorded ABV when a compatible by-volume value is available, or null when the catalogue value is ambiguous or unusable.
+        abvMin:
+          type: [number, "null"]
+          minimum: 0.5
+          maximum: 100
+          description: Lower end of the listed ABV or wine-style range, or null when unavailable.
+        abvMax:
+          type: [number, "null"]
+          minimum: 0.5
+          maximum: 100
+          description: Upper end of the listed ABV or wine-style range, or null when unavailable.
+        abvIsEstimate:
+          type: boolean
+          description: True for generalized wine-style values rather than a specific branded product.
+        sourceUrl:
+          type: string
+          format: uri
+      required:
+        - code
+        - name
+        - brand
+        - category
+        - volumeMl
+        - alcoholPercent
+        - abvMin
+        - abvMax
+        - abvIsEstimate
+        - sourceUrl
+    DrinkSearchResponse:
+      type: object
+      additionalProperties: false
+      properties:
+        products:
+          type: array
+          items:
+            $ref: "#/components/schemas/DrinkSearchProduct"
+      required:
+        - products
+    DrinkProductNutritionResponse:
+      type: object
+      additionalProperties: false
+      properties:
+        caloriesPer100Ml:
+          type: [number, "null"]
+          minimum: 0
+          description: Calories per 100 ml, or null when the local record has no compatible nutrition basis.
+        alcoholPercent:
+          type: [number, "null"]
+          minimum: 0
+          maximum: 100
+          description: Recorded alcohol by volume when available.
+        volumeMl:
+          type: [number, "null"]
+          minimum: 0
+          description: Package volume in milliliters when present in the local record; otherwise null.
+      required:
+        - caloriesPer100Ml
+        - alcoholPercent
+        - volumeMl
+

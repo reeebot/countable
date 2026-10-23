@@ -1,0 +1,226 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "cA1myZ0UhyJ7ZG_PcN7pI"
+uri = "file://generated-artifacts/daily-drink-counter-android-arm64.apk"
+type = "unspecified"
+title = "Daily Drink Counter — Android APK"
+description = "50 MB arm64 Android test build for sideloading. Debug-signed; not ready for Play Store release."
+logical_id = "6e6514d1-879f-4a33-8c6d-4ee9117eda99"
+content_hash = "sha256:d8aa0dd30bb85d46261a95900443f6a1c73e046f2abfa88bb05658c4ecec5d57"
+size = 51865210
+mtime_ms = 1791762099990
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/6e6514d1-879f-4a33-8c6d-4ee9117eda99/203828f5-e96a-4632-8813-40cefc290274"
+storage_version_token = "1791762220873283"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "igcurtPGoOhiluif8R5gP"
+uri = "file://generated-artifacts/daily-drink-counter-goals-android-arm64.apk"
+type = "unspecified"
+title = "Daily Drink Counter Android APK"
+description = "Updated Android installer with date-specific goals, a weekend-aware taper planner, and the corrected launcher icon (arm64)."
+logical_id = "25bf74ef-8e8a-4683-8a7e-d9855ee8f420"
+content_hash = "sha256:404ee3170176fdf449466e99194b35034ea1368db793089739e34aa2367f0d54"
+size = 51919895
+mtime_ms = 1791765461125
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/25bf74ef-8e8a-4683-8a7e-d9855ee8f420/532b322a-2609-4779-9508-2075bcfcc060"
+storage_version_token = "1791765475658689"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "x0nLsDlfcEXLV3TBD5iY1"
+uri = "file://generated-artifacts/daily-drink-counter-icon-fix-android-arm64.apk"
+type = "unspecified"
+title = "Daily Drink Counter APK — Fixed Icon"
+description = "Fresh signed arm64 Android installer with an opaque full-bleed app icon and transparent adaptive foreground to prevent white launcher corners."
+logical_id = "867f2722-fd94-4091-94d8-d60415f02dc6"
+content_hash = "sha256:1bab7e51da8cde3a7fefe497cc278bdbdc1b12d0dd81aa91fc68c92d5cca1ee1"
+size = 51923107
+mtime_ms = 1791767591822
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/867f2722-fd94-4091-94d8-d60415f02dc6/5f037de4-24b0-48e4-b4d8-968f441b0d06"
+storage_version_token = "1791767646661681"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "5ybEJU_j7-Hk0qokRB4Rj"
+uri = "file://generated-artifacts/daily-drink-counter-latest-android-arm64.apk"
+type = "unspecified"
+title = "Daily Drink Counter — latest Android APK"
+description = "Fresh signed ARM64 APK built from the latest merged app code, including the drink-edit daily-total preview. Verified package and APK signature."
+logical_id = "bbf926e3-8047-425b-931a-4fdc1fbf2cb8"
+content_hash = "sha256:89730057c23c61b85543503ef2db6767f3e35a8d7c5d460b927aac31ffc62b5b"
+size = 51926347
+mtime_ms = 1791769509205
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/bbf926e3-8047-425b-931a-4fdc1fbf2cb8/6ba43ac1-33e5-44b0-8c25-c537d800fed7"
+storage_version_token = "1791769533547029"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "Xqyt3YNymMEjY2DJl2vMS"
+uri = "file://generated-artifacts/daily-drink-counter-1.0.1-android-arm64.apk"
+type = "unspecified"
+title = "Daily Drink Counter APK — v1.0.1"
+description = "ARM64 Android APK, package com.countable.app, version code 2."
+logical_id = "2bbfb955-b657-4495-bfa4-34dd7f1bb16a"
+content_hash = "sha256:0e590f25c398bcd979ab0c68ba4a65cd7b748f735bd97e2ada8a8e0c2e4aeb63"
+size = 51943755
+mtime_ms = 1791772430002
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/2bbfb955-b657-4495-bfa4-34dd7f1bb16a/099e275e-ed90-4ba4-a134-b32b7ab4bd56"
+storage_version_token = "1791772474036856"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "uH600NbpzK0T0Bmdrq43O"
+uri = "file://generated-artifacts/countable-1.0.2-android-arm64.apk"
+type = "unspecified"
+title = "Countable Android APK 1.0.2"
+description = "Direct-install test APK for 64-bit Android phones. Package com.countable.app, version code 3. Verified Android signature; bundled with the production API URL."
+logical_id = "2562cddc-2cdf-423c-81a4-454c4341bce0"
+content_hash = "sha256:1c806ddd1d02843a0a0d2f487a1f8120cc52a804c0f03e0d17e5a82f1c1dd0d9"
+size = 51955795
+mtime_ms = 1792033496004
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/2562cddc-2cdf-423c-81a4-454c4341bce0/278e9982-5d83-46ec-acdc-378cd32e155e"
+storage_version_token = "1792033568851474"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "jJFNKFs8-a54IZWqEJBvv"
+uri = "file://generated-artifacts/countable-1.0.3-android-arm64.apk"
+type = "unspecified"
+title = "Countable Android APK 1.0.3"
+description = "Arm64 installable update. Verified to use the same signing certificate as the previous APK, so install it over the existing app to keep local records."
+logical_id = "cfd13795-4a29-4577-92a9-a467f31b051d"
+content_hash = "sha256:bc237d1bb9c073a8d880b1b25f95d16872f9e1907d59201a3a610e90614eb1e3"
+size = 52085159
+mtime_ms = 1792037365600
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/cfd13795-4a29-4577-92a9-a467f31b051d/03b474ec-490b-4eec-b672-9f9c633ee74a"
+storage_version_token = "1792037378006239"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "VSxJ5Z80cHXN8aEpJn_n9"
+uri = "file://generated-artifacts/countable-1.0.4-android-arm64-debug.apk"
+type = "unspecified"
+title = "Countable 1.0.4 Android test APK"
+description = "Self-contained ARM64 test APK with purchase, stock, spending, and goal-based savings tracking. Debug-signed with the same certificate as the previous test APK, so it installs as an update; no Metro server or signing secrets are needed."
+logical_id = "5aa69101-d6df-4d75-8631-ba775cab8ec2"
+content_hash = "sha256:e35a305844ef962c922ad012db01670dc8e6a8b0c4995e0499919d7e46230491"
+size = 97341936
+mtime_ms = 1792717691573
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/5aa69101-d6df-4d75-8631-ba775cab8ec2/1baef73a-fd32-4706-8d22-731b69c4b79f"
+storage_version_token = "1792717793602547"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "L0Gj_x7zYItFcGIvO-nxQ"
+uri = "file://generated-artifacts/countable-1.0.5-android-arm64-debug.apk"
+type = "unspecified"
+title = "Countable 1.0.5 Android APK"
+description = "Updated ARM64 test APK with the past-day Add drink action made visible. Debug-signed with the same certificate as the previous APK, so it installs as an update."
+logical_id = "aec5bf98-5d88-4005-add2-7cb4b55c48b4"
+content_hash = "sha256:cb68e5d3a7752d2c842a9772695c65b7cd9fa345d845445295cac9bef9cd23e4"
+size = 97341936
+mtime_ms = 1792719230860
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/aec5bf98-5d88-4005-add2-7cb4b55c48b4/26577ab6-8fee-4dc4-ab01-2529e14a22c2"
+storage_version_token = "1792719247533865"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "3lGcNAS4dglH75Ue69rRJ"
+uri = "file://generated-artifacts/countable-1.0.6-android-arm64-debug.apk"
+type = "unspecified"
+title = "Countable Android APK 1.0.6"
+description = "Corrected ARM64 APK. Adds the past-day drink button; versionCode 7 can update a 1.0.5 install. Same signing certificate as the previous APK."
+logical_id = "1b62e670-69ae-4e91-b39c-0bb845a59593"
+content_hash = "sha256:192a55ae0a8c08d4f6344e7f04335067c4d7a9b446029649bc3f6983f53ffa84"
+size = 97380200
+mtime_ms = 1792720067024
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/1b62e670-69ae-4e91-b39c-0bb845a59593/5a72299b-5796-42e9-b5a3-d95825103329"
+storage_version_token = "1792720174106517"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "yk4IyPi-wvGZ7cq3TihpE"
+uri = "file://generated-artifacts/Countable-1.0.7-v8-debug.apk"
+type = "unspecified"
+title = "Countable Android APK 1.0.7"
+description = "Installable arm64-v8a debug APK, version code 8. Its signing identity matches the previous direct-install build. For Android testing, not Google Play distribution."
+logical_id = "98061db9-188a-4f16-875b-8e5b8046af74"
+content_hash = "sha256:689fd939e646a7ec1c3af05ef1c01501700e10b3621311a5fa78a6daa6eb9714"
+size = 97382116
+mtime_ms = 1792724332668
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/98061db9-188a-4f16-875b-8e5b8046af74/bb64b63f-6dd3-42b2-ac03-20abd48db2f7"
+storage_version_token = "1792724344534742"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "Sq-lOS9zmmi-8yuEiNIz-"
+uri = "file://generated-artifacts/Countable-1.0.8-v9-debug.apk"
+type = "unspecified"
+title = "Countable Android APK 1.0.8"
+description = "Android arm64 debug APK with the restored daily goal progress card. Version code 9; signed with the same certificate as the previous APK for update installs."
+logical_id = "f5cea49e-f3a4-4183-bc64-b2a02822b4e6"
+content_hash = "sha256:f8fa1e55824df84456da2937dabdb39df4f76ab2e7a1208327ff06448a7615af"
+size = 97384148
+mtime_ms = 1792725526808
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/f5cea49e-f3a4-4183-bc64-b2a02822b4e6/9ff08c1e-d92f-49ff-961e-1298212aae56"
+storage_version_token = "1792725551717388"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "DNd98kAiaEsWveV4MsOSb"
+uri = "file://generated-artifacts/Countable-1.0.9-v10-debug.apk"
+type = "unspecified"
+title = "Countable Android APK 1.0.9"
+description = "Fixes Android drink search by embedding the Replit API domain in the debug app bundle. Arm64, version code 10; signed with the same certificate as the prior APK."
+logical_id = "edb5897e-b891-47e6-afb4-d1d555abdbca"
+content_hash = "sha256:b74712c00699c94d5836f50fa7317bcba309e00af8e9704dc0734c58f153265b"
+size = 97384240
+mtime_ms = 1792726230252
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/edb5897e-b891-47e6-afb4-d1d555abdbca/e7d90781-7ca8-49d4-877a-0b92949c56a7"
+storage_version_token = "1792726257200162"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "wby2FMXCUlcUE-Ni65vGE"
+uri = "file://generated-artifacts/Countable-1.1.0-v11-debug.apk"
+type = "unspecified"
+title = "Countable Android APK with home-screen widget"
+description = "Debug-signed Android APK, version 1.1.0 (version code 11). Install it to add Countable's home-screen widget."
+logical_id = "2f069596-251b-4e10-95a4-9385c1fe0ce1"
+content_hash = "sha256:e7f34748c023c1a03e0b971dd963181a95aeb6abf5dd2e1e992b7576fd591aa9"
+size = 88274136
+mtime_ms = 1792728529712
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/2f069596-251b-4e10-95a4-9385c1fe0ce1/b8fc9521-d49b-464e-8505-76dc19f6b701"
+storage_version_token = "1792729115071893"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "CLiBPGksuxhfN0ev3Azqf"
+uri = "file://generated-artifacts/Countable-1.1.1-v12-debug.apk"
+type = "unspecified"
+title = "Countable APK — fixed bundled app"
+description = "Version 1.1.1 (version code 12). This self-contained debug APK includes the Android JavaScript bundle and home-screen widget; same signing certificate as the prior APK."
+logical_id = "a4272da7-f77f-4eb8-8dd4-242f5d86b48b"
+content_hash = "sha256:0df6d2e41aa29c9ab038cf8dc592d182f219362ecbb78330eaec9ade1ce3e576"
+size = 97795503
+mtime_ms = 1792780339992
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/a4272da7-f77f-4eb8-8dd4-242f5d86b48b/aa5643e5-7285-4491-b641-64d71503dc3a"
+storage_version_token = "1792780360128206"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "ABCTraqHzf7qTd7RT2A8x"
+uri = "file://generated-artifacts/Countable-1.1.2-v13-debug.apk"
+type = "unspecified"
+title = "Countable Android APK 1.1.2"
+description = "Arm64 APK with the new compact 2×1 home-screen widget. Install over the previous Countable APK, then open your launcher’s Widgets picker and choose Countable compact."
+logical_id = "693664cf-39b7-4680-9501-2682d5902214"
+content_hash = "sha256:c9ebada921e3df64950e46940e673a8531831c937b0a456de79dee2abc5fd700"
+size = 97798628
+mtime_ms = 1792788601632
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:917de194-012b-47a1-bfe5-85d78b0fb791/693664cf-39b7-4680-9501-2682d5902214/832a94b8-1cfb-40b4-880a-87d11a91cdab"
+storage_version_token = "1792788644802850"
+content_type = "application/octet-stream"

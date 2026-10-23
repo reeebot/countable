@@ -1,0 +1,5 @@
+- [Catalogue alcohol data](catalogue-alcohol-data.md) — Local beer/liquor is approved; wine stays typical, and new servings default to fl oz with no calorie cautions.
+- [Android build setup](android-build-setup.md) — Keep SDK/native files in `.local`; after Expo prebuild, check for workspace package-manifest rewrites and reduce Gradle resources if needed.
+- [Goal calendar and drink patterns](daily-goal-calendar.md) — Daily goals vary by date; taper plans use logged weekday/weekend data, while optional context-tag insights describe associations, not causes.
+- [Drink logging workflow](drink-logging-workflow.md) — Users usually reuse saved/favorited drinks; keep adding a new drink secondary.
+- [Package stock and spending](package-stock-spending.md) — Purchases are packages; matching logged drinks draw volume from stock and support goal-based spending estimates.

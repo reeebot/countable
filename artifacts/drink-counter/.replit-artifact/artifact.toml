@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/"
+title = "Daily Drink Counter"
+description = "A simple mobile app for counting drinks throughout the day, with quick add and undo controls and daily totals saved on the device."
+version = "1.0.0"
+id = "artifacts/drink-counter"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/" ]
+localPort = 23756
+
+[services.development]
+run = "pnpm --filter @workspace/drink-counter run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/drink-counter", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/drink-counter", "run", "serve" ]
+
+[services.env]
+PORT = "23756"
+BASE_PATH = "/"
